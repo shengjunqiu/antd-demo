@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { Card, Space } from 'antd';
 import './App.css'
 
 function App() {
@@ -28,6 +29,18 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Space direction="vertical" size={16}>
+    <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+    <Card size="small" title="Small size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+  </Space>
     </>
   )
 }
